@@ -3,17 +3,22 @@
   "version": "1.0.0",
   "description": "Lab1",
   "main": "main.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node main.mjs"
   },
   "author": "Daryna",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.21.2",
+    "@babel/preset-env": "^7.21.4",
     "eslint": "^8.35.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-n": "^15.6.1",
-    "eslint-plugin-promise": "^6.1.1"
+    "eslint-plugin-promise": "^6.1.1",
+    "esm": "^3.2.25"
   },
   "dependencies": {
     "uuidv4": "^6.2.13"
